@@ -16,8 +16,6 @@ pipeline {
                 }
             }
         }
-
-
         stage('Checkout') {
             steps {
                 script {
