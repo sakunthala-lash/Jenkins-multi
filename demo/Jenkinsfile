@@ -43,7 +43,7 @@ pipeline {
             steps {
                 script {
                     try {
-                        dir('C:/Users/sakua/.jenkins/workspace/Multibranch - Pipeline/demo') {
+                        dir('C:/Users/sakua/.jenkins/workspace/Multibranch - Pipeline_main/demo') {
                             bat 'mvn clean install'
                         }
                     } catch (Exception e) {
