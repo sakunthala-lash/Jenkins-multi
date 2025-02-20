@@ -29,4 +29,5 @@ public class EmployeeEntity {
 
     @NotNull(message = "Salary cannot be null")
     private Double salary;
+    
 }
