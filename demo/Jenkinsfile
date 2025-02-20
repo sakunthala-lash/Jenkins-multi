@@ -39,15 +39,6 @@ pipeline {
             }
         }
 
-        stage('List All Environment Variables') {
-            steps {
-                script {
-                    echo "Listing all available environment variables:"
-                    bat 'set'
-                }
-            }
-        }
-
         stage('Build') {
             steps {
                 script {
