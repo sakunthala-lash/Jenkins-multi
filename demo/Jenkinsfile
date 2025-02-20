@@ -6,7 +6,6 @@ pipeline {
     environment {
         GITHUB_REPO = 'https://github.com/sakunthala-lash/Jenkins-multi.git'
     }
-
     stages {
         stage('Extract Payload Data') {
             steps {
