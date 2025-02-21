@@ -41,7 +41,6 @@ public class EmployeeController {
         return new ResponseEntity<>(employeeResult, HttpStatus.CREATED);
     }
 
-
     @GetMapping
     public List<EmployeeEntity> getAllEmployees() {
         return employeeService.getAllEmployees();
@@ -59,14 +58,10 @@ public class EmployeeController {
         return new ResponseEntity<>(employeeService.updateEmployee(id, employeeDetails), HttpStatus.OK);
     }
 
-
-
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteEmployee(@PathVariable Long id) {
         employeeService.deleteEmployee(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
-
-
 
 }

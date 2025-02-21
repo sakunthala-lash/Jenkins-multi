@@ -12,6 +12,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+
 @Entity
 @Getter
 @Setter
@@ -29,4 +30,5 @@ public class EmployeeEntity {
 
     @NotNull(message = "Salary cannot be null")
     private Double salary;
+    
 }
