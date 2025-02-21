@@ -23,11 +23,12 @@ import jakarta.validation.Valid;
 @RequestMapping("/students")
 public class StudentController {
 
+    
     @Autowired
     private StudentService studentService;
 
     @GetMapping
-    public List<StudentEntity> getAllStudents() { //for get alllll..
+    public List<StudentEntity> getAllStudents() { 
         return studentService.getAllStudents();
     }
 

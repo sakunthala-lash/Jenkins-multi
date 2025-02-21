@@ -52,7 +52,6 @@ public class EmployeeController {
         return employee != null ? new ResponseEntity<>(employee, HttpStatus.OK) : new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
-
     @PutMapping("/{id}")
     public ResponseEntity<EmployeeEntity> updateEmployee(@PathVariable Long id, @RequestBody @Valid EmployeeEntity employeeDetails) {
         return new ResponseEntity<>(employeeService.updateEmployee(id, employeeDetails), HttpStatus.OK);
